@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    padding: 10px;
+    background-color: orange;
+    color: black;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid brown;
+    /* float: right; */
+    cursor: pointer;
+    border-radius: 30px;
+    /* display: block; */
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+body {
+    background-color: rgb(39, 37, 37);
+    display: flex;
+    place-items: center;
+    height: 100vh;
+}
+
+main {
+    background-color: rgb(3, 3, 43);
+    display: grid;
+    grid-template-areas: 'a a b' 'c d d' 'c e e';
+    gap: 15px;
+    width: 40%;
+    margin: auto;
+    padding-right: 200px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+}
+
+main div {
+    padding: 3em;
+    text-align: center;
+}
+
+.item-a {
+    background-color: red;
+    grid-area: a;
+    padding: 100px;
+}
+
+.item-b {
+    background-color: orange;
+    grid-area: b;
+    padding: 80px;
+}
+
+.item-c {
+    background-color: green;
+    grid-area: c;
+    padding: 90px;
+}
+
+.item-d {
+    background-color: rgb(138, 209, 233);
+    grid-area: d;
+}
+
+.item-e {
+    background-color: rgb(138, 209, 233);
+    grid-area: e;
+    padding: 4em;
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        background-color: rgb(3, 3, 43);
+        display: grid;
+        grid-template-areas: 'a a b' 'c d d' 'c e e';
+        gap: 15px;
+        width: 100%;
+        margin: auto;
+        padding-right: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+    }
+}

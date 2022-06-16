@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 95%);
+    padding: 50px;
+    align-content: stretch;
+}
+
+.first-div {
+    background-color: hsl(31, 77%, 52%);
+    padding: 3em;
+    width: 100%;
+    /* margin-top: 130px; */
+    /* margin-bottom: 100px; */
+    /* margin-left: 200px; */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.second-div {
+    background-color: hsl(184, 100%, 22%);
+    padding: 3em;
+    width: 100%;
+    /* margin-top: 130px; */
+    /* margin-bottom: 100px; */
+}
+
+ul a {
+    padding: 7px;
+    background-color: orange;
+    color: black;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid brown;
+    display: inline;
+    float: left;
+    cursor: pointer;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.third-div {
+    background-color: hsl(179, 100%, 13%);
+    padding: 3em;
+    width: 100%;
+    /* margin-top: 130px; */
+    /* margin-bottom: 100px; */
+    /* margin-right: 200px; */
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(LexendDeca-VariableFont_wght.ttf)
+}
+
+@font-face {
+    font-family: mySecond;
+    src: url(BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: myFont;
+    padding: 5px;
+    font-weight: 400;
+    border: 2px;
+    align-items: flex-end;
+}
+
+h1 {
+    font-family: mySecond;
+    padding: 20px;
+    color: hsl(0, 0%, 95%);
+    font-size: 43px;
+    font-weight: 700;
+}
+
+button {
+    padding: 15px;
+    margin-top: 50;
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    border: 2px solid;
+    border-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    width: 80%;
+    margin-top: 90px;
+    font-family: myFont;
+    background: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        padding: 70px 30px;
+        background-color: aqua;
+        flex-direction: column;
+        align-content: center;
+        height: 150vh;
+    }
+}
